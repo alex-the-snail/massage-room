@@ -1,12 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>massage-room</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ SEO ============ -->
+  <title>Тихая Гавань — массажный салон в центре города</title>
+  <meta name="description" content="Профессиональный массаж: классический, тайский, спортивный, лимфодренажный, для пар и ароматерапия. Запишитесь онлайн." />
+  <meta name="keywords" content="массаж, массажный салон, тайский массаж, спортивный массаж, лимфодренажный массаж, ароматерапия, спа" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph (превью в соцсетях) -->
+  <meta property="og:title" content="Тихая Гавань — массажный салон" />
+  <meta property="og:description" content="Шесть авторских программ массажа. Опытные мастера." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Структурированные данные для Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Тихая Гавань",
+    "description": "Массажный салон. 6 авторских программ.",
+    "telephone": "+7 (000) 000-00-00",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Москва",
+      "streetAddress": "ул. Примерная, 1"
+    },
+    "openingHours": "Mo-Su 10:00-22:00",
+    "priceRange": "₽₽"
+  }
+  </script>
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Karla:wght@300;400;500;600&display=swap" />
+
+  <!-- Наши стили -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Massage room</h1>
-  <p>Website of a private massage parlor</p>
+
+  <!-- ============ ШАПКА / НАВИГАЦИЯ ============ -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="logo">Тихая Гавань</a>
+      <div class="nav-links">
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <a href="#contact" class="btn-outline">Записаться</a>
+    </nav>
+  </header>
+
+  <!-- ============ ГЕРОЙ-БЛОК ============ -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">Массаж · Спа · Восстановление</span>
+        <h1>Тишина, в которой<br />тело отдыхает</h1>
+        <p>Шесть авторских программ массажа. Опытные мастера. Уютный кабинет в центре города.</p>
+        <div class="hero-cta">
+          <a href="#services" class="btn-primary">Посмотреть услуги</a>
+          <a href="#contact" class="btn-outline-light">Записаться</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ УСЛУГИ (6 БЛОКОВ) ============ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow accent">Наши услуги</span>
+        <h2>Выберите свой ритуал</h2>
+        <p>Каждая программа разработана для конкретного запроса — от глубокого расслабления до восстановления после спорта.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <a href="#klassicheskiy" class="service-card">
+          <div class="card-top">
+            <span class="card-num">01</span>
+            <span class="card-meta">60 мин</span>
+          </div>
+          <h3>Классический массаж</h3>
+          <p>Глубокая проработка мышц для снятия напряжения и усталости.</p>
+          <div class="card-foot">
+            <span class="price">от 3 500 ₽</span>
+            <span class="more">Подробнее →</span>
+          </div>
+        </a>
+
+        <a href="#tayskiy" class="service-card">
+          <div class="card-top">
+            <span class="card-num">02</span>
+            <span class="card-meta">90 мин</span>
+          </div>
+          <h3>Тайский массаж</h3>
+          <p>Древняя техника растяжек и точечного давления для тела и духа.</p>
+          <div class="card-foot">
+            <span class="price">от 4 800 ₽</span>
+            <span class="more">Подробнее →</span>
+          </div>
+        </a>
+
+        <a href="#sportivnyy" class="service-card">
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <span class="card-meta">60 мин</span>
+          </div>
+          <h3>Спортивный массаж</h3>
+          <p>Восстановление после нагрузок и подготовка к тренировкам.</p>
+          <div class="card-foot">
+            <span class="price">от 4 000 ₽</span>
+            <span class="more">Подробнее →</span>
+          </div>
+        </a>
+
+        <a href="#limfodrenazh" class="service-card">
+          <div class="card-top">
+            <span class="card-num">04</span>
+            <span class="card-meta">75 мин</span>
+          </div>
+          <h3>Лимфодренажный</h3>
+          <p>Мягкая техника для снятия отёков и улучшения тонуса кожи.</p>
+          <div class="card-foot">
+            <span class="price">от 4 200 ₽</span>
+            <span class="more">Подробнее →</span>
+          </div>
+        </a>
+
+        <a href="#dlya-par" class="service-card">
+          <div class="card-top">
+            <span class="card-num">05</span>
+            <span class="card-meta">60 мин</span>
+          </div>
+          <h3>Массаж для пар</h3>
+          <p>Расслабляющая процедура в одном кабинете для двоих.</p>
+          <div class="card-foot">
+            <span class="price">от 7 500 ₽</span>
+            <span class="more">Подробнее →</span>
+          </div>
+        </a>
+
+        <a href="#aromaterapiya" class="service-card">
+          <div class="card-top">
+            <span class="card-num">06</span>
+            <span class="card-meta">60 мин</span>
+          </div>
+          <h3>Ароматерапия</h3>
+          <p>Расслабление с эфирными маслами — для тела и эмоций.</p>
+          <div class="card-foot">
+            <span class="price">от 3 800 ₽</span>
+            <span class="more">Подробнее →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ О НАС ============ -->
+  <section id="about" class="section section-muted">
+    <div class="container about">
+      <span class="eyebrow accent">О салоне</span>
+      <h2>Место, куда хочется вернуться</h2>
+      <p class="about-lead">
+        Мы создали пространство, в котором сочетаются тишина, профессионализм и забота.
+        Только сертифицированные мастера, авторские масла и атмосфера, в которой легко выдохнуть.
+      </p>
+      <div class="stats">
+        <div><div class="stat-num">8+</div><div class="stat-lbl">лет опыта</div></div>
+        <div><div class="stat-num">6</div><div class="stat-lbl">программ</div></div>
+        <div><div class="stat-num">1200+</div><div class="stat-lbl">клиентов</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ КОНТАКТЫ ============ -->
+  <section id="contact" class="section">
+    <div class="container contact">
+      <span class="eyebrow accent">Контакты</span>
+      <h2>Записаться на сеанс</h2>
+      <p>Позвоните или напишите — подберём удобное время и подходящую программу.</p>
+      <div class="contact-grid">
+        <div class="service-card">
+          <div class="card-meta">Телефон</div>
+          <a href="tel:+70000000000" class="contact-value">+7 (000) 000-00-00</a>
+        </div>
+        <div class="service-card">
+          <div class="card-meta">Адрес</div>
+          <div class="contact-value">ул. Примерная, 1</div>
+          <div class="contact-sub">Ежедневно 10:00–22:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ПОДВАЛ ============ -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <div class="logo dark">Тихая Гавань</div>
+      <div>© 2026 Все права защищены</div>
+    </div>
+  </footer>
+
 </body>
 </html>
